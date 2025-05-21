@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrinho de Compras - FashionFast</title>
+  <link rel="stylesheet" href="carrinho.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="imagensaleatorias/LOGOTIPO 3.png" alt="logo" />
+    </div>
+    <nav>
+      <UL>
+        <LI><A HREF="INDEX.HTML">NOVIDADES</A></LI>
+        <LI><A HREF="CALCASM.HTML">MASCULINO</A></LI>
+        <LI><A HREF="VESTIDO.HTML">FEMININO</A></LI>
+        <LI><A HREF="INFANTIL.HTML">INFANTIL</A></LI>
+        <LI><A HREF="SOBRENOS.HTML">SOBRE NÓS</A></LI>
+      </UL>
+    </nav>
+    <div class="login-cart">
+      <a href="login.html">ENTRAR</a>
+      <a href="carrinho.html" class="cart" title="Ver carrinho">
+        🛒
+        <span id="cart-count-header">0</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Carrinho de Compras Section -->
+  <section class="carrinho-container">
+    <h1>SEU CARRINHO</h1>
+
+    <table class="carrinho-tabela">
+      <thead>
+        <tr>
+          <th>PRODUTO</th>
+          <th>QUANTIDADE</th>
+          <th>PREÇO UNITÁRIO</th>
+          <th>SUBTOTAL</th>
+          <th>AÇÕES</th>
+        </tr>
+      </thead>
+      <tbody id="carrinho-produtos">
+        <!-- Produtos vão ser inseridos aqui via JS -->
+      </tbody>
+    </table>
+
+    <div class="resumo-pedido">
+      <h2>RESUMO DO PEDIDO</h2>
+      <p><strong>Total:</strong> R$ <span id="total-pedido">0.00</span></p>
+      <button class="finalizar-btn" id="finalizar-compra">FINALIZAR COMPRA</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy;  2025 FASHION FAST. TODOS OS DIREITOS RESERVADOS.</p>
+  </footer>
+
+  <script src="carrinho.js"></script>
+</body>
+
+</html>

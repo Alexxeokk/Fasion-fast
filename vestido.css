@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+header .logo img {
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 40px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #EF0056;
+  text-decoration: underline;
+}
+
+.login-cart a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+.login-cart a:hover {
+  background-color: #555;
+}
+
+/* Container para conteúdo com padding */
+.container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.ticket-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.ticket-item {
+  width: 23%;
+  margin: 20px 0;
+  box-shadow: 1px 1px 2px rgba(60, 60, 60, 1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ticket-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ticket-item img {
+  width: 100%;
+  height: auto;
+}
+
+.down-content {
+  padding: 15px;
+}
+
+.down-content h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.down-content p {
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.down-content button {
+  padding: 10px 15px;
+  background-color: #EF0056;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.down-content button:hover {
+  background-color: #b3003f;
+}
+
+.entrega {
+  font-weight: 600;
+  color: rgb(2, 2, 2); /* texto em verde */
+}
+
+.entrega i {
+  color: #006400; /* ícone em verde mais escuro */
+  margin-right: 5px;
+}
+
+.btn-ver{
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #282626;
+  color: #ffffff;
+  font-size: 0.9rem;
+}

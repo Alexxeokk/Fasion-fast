@@ -1,0 +1,227 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: #f4f4f4;
+}
+
+p {
+    color: #333333; 
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Deixa os itens da lista em linha */
+}
+
+nav ul li {
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-cart a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.login-cart a:hover {
+    background-color: #555;
+}
+
+header .logo img {
+    width: 250px;
+}
+
+
+ul li a:hover {
+    color: #EF0056; /* Cor ao passar o mouse */
+}
+
+
+nav ul li a:hover, nav ul li a.active {
+  text-decoration: underline;
+}
+.login-cart a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+/* Banner Principal */
+.main-banner {
+    position: relative;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 30%;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.banner-text p {
+    font-size: 24px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #EF0056;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color:#EF0056;
+}
+
+/* Seção de Produtos Destaque */
+.featured-products {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured-products h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Preço riscado para mostrar o desconto */
+.product-card .old-price {
+    text-decoration: line-through;
+    color: #EF0056;
+    margin-right: 10px;
+}
+
+.buy-now {
+    padding: 10px 20px;
+    background-color: #EF0056;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buy-now:hover {
+    background-color: #a3053f;
+}
+
+/* Seção de Categorias */
+.categories {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    width: 100%;
+}
+
+.categories h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.category-grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+.category-card {
+    text-align: center;
+}
+
+.category-card h3 {
+    font-size: 18px;
+}
+
+/* Remover linha azul nos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: #282626;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+footer p {
+    color: white; /* Ou qualquer outra cor que você queira no footer */
+    font-size: 20px;
+}
